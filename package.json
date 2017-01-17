@@ -1,0 +1,24 @@
+{
+  "name": "@nylira/vue-countdown",
+  "version": "1.0.0",
+  "description": "Countdown component for Vue projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nylira/vue-countdown.git"
+  },
+  "keywords": [
+    "countdown",
+    "vue",
+    "timer"
+  ],
+  "author": "Peng Zhong <peng@nylira.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nylira/vue-countdown/issues"
+  },
+  "homepage": "https://github.com/nylira/vue-countdown#readme"
+}
