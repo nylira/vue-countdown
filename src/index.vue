@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  name: 'pz-countdown',
   computed: {
     usableDate () {
       return Math.trunc(Date.parse(this.date) / 1000)
@@ -56,6 +57,6 @@ export default {
   },
   props: ['date']
 }
-
 </script>
+
 <style src="./style.css"></style>
