@@ -17,4 +17,4 @@ Countdown component for Vue 2.
     </script>
 
 ## Options
-Add the parameter `date='short'` for D, H, M, S labels.
+Add the parameter `units='short'` for D, H, M, S units instead of Days, Hours, Minutes, etc.
