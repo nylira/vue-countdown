@@ -2,19 +2,31 @@
   <div class="pz-countdown">
     <div class="block">
       <div class="value">{{ twoDigits(days) }}</div>
-      <div class="unit">Days</div>
+      <div class="unit">
+        <template v-if="units === 'short'">D</template>
+        <template v-else>Days</template>
+      </div>
     </div>
     <div class="block">
       <div class="value">{{ twoDigits(hours) }}</div>
-      <div class="unit">Hours</div>
+      <div class="unit">
+        <template v-if="units === 'short'">H</template>
+        <template v-else>Hours</template>
+      </div>
     </div>
     <div class="block">
       <div class="value">{{ twoDigits(minutes) }}</div>
-      <div class="unit">Minutes</div>
+      <div class="unit">
+        <template v-if="units === 'short'">M</template>
+        <template v-else>Minutes</template>
+      </div>
     </div>
     <div class="block">
       <div class="value">{{ twoDigits(seconds) }}</div>
-      <div class="unit">Seconds</div>
+      <div class="unit">
+        <template v-if="units === 'short'">S</template>
+        <template v-else>Seconds</template>
+      </div>
     </div>
   </div>
 </template>
@@ -55,7 +67,7 @@ export default {
       this.now = Math.trunc((new Date()).getTime() / 1000)
     }, 1000)
   },
-  props: ['date']
+  props: ['date', 'units']
 }
 </script>
 
