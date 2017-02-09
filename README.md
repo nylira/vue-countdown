@@ -1,20 +1,31 @@
 # vue-countdown
 Countdown component for Vue 2.
 
+## Installation
+
+    npm install @nylira/vue-countdown
+
 ## Usage
+Here's an example Vue 2 component.
 
     <template>
-      <vue-countdown date="February 28, 2017"></vue-countdown>
+      <countdown date="February 28, 2017"></countdown>
     </template>
 
     <script>
-      import VueCountdown from '@nylira/vue-countdown'
+      import Countdown from '@nylira/vue-countdown'
       export default {
         components: {
-          VueCountdown
+          Countdown
         }
       }
     </script>
 
-## Options
-Add the parameter `units='short'` for D, H, M, S units instead of Days, Hours, Minutes, etc.
+    <style>
+      .ny-countdown {
+        width: 320px;
+      }
+    </style>
+
+## Parameters
+Add the parameter `units='short'` for D, H, M, S labels instead of Days, Hours, Minutes, etc.

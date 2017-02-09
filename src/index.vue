@@ -1,5 +1,5 @@
 <template>
-  <div class="pz-countdown">
+  <div class="ni-countdown">
     <div class="component">
       <div class="value">{{ twoDigits(days) }}</div>
       <div class="unit">
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'pz-countdown',
+  name: 'ni-countdown',
   computed: {
     usableDate () {
       return Math.trunc(Date.parse(this.date) / 1000)
