@@ -1,27 +1,27 @@
 <template>
   <div class="pz-countdown">
-    <div class="block">
+    <div class="component">
       <div class="value">{{ twoDigits(days) }}</div>
       <div class="unit">
         <template v-if="units === 'short'">D</template>
         <template v-else>Days</template>
       </div>
     </div>
-    <div class="block">
+    <div class="component">
       <div class="value">{{ twoDigits(hours) }}</div>
       <div class="unit">
         <template v-if="units === 'short'">H</template>
         <template v-else>Hours</template>
       </div>
     </div>
-    <div class="block">
+    <div class="component">
       <div class="value">{{ twoDigits(minutes) }}</div>
       <div class="unit">
         <template v-if="units === 'short'">M</template>
         <template v-else>Minutes</template>
       </div>
     </div>
-    <div class="block">
+    <div class="component">
       <div class="value">{{ twoDigits(seconds) }}</div>
       <div class="unit">
         <template v-if="units === 'short'">S</template>
