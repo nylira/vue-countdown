@@ -6,7 +6,6 @@ Countdown component for Vue 2.
     npm install @nylira/vue-countdown
 
 ## Usage
-Here's an example Vue 2 component.
 
     <template>
       <countdown date="February 28, 2017"></countdown>
@@ -28,4 +27,6 @@ Here's an example Vue 2 component.
     </style>
 
 ## Parameters
-Add the parameter `units='short'` for D, H, M, S labels instead of Days, Hours, Minutes, etc.
+
+    <countdown units="short"></countdown>
+    // for D, H, M, S labels instead of Days, Hours, Minutes, Seconds
