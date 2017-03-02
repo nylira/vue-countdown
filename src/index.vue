@@ -1,31 +1,33 @@
 <template>
   <div class="ni-countdown">
-    <div class="component">
-      <div class="value">{{ twoDigits(days) }}</div>
-      <div class="unit">
-        <template v-if="units === 'short'">D</template>
-        <template v-else>Days</template>
+    <div class="ni-kvs">
+      <div class="ni-kv">
+        <div class="ni-kv-value">{{ twoDigits(days) }}</div>
+        <div class="ni-kv-key">
+          <template v-if="units === 'short'">D</template>
+          <template v-else>Days</template>
+        </div>
       </div>
-    </div>
-    <div class="component">
-      <div class="value">{{ twoDigits(hours) }}</div>
-      <div class="unit">
-        <template v-if="units === 'short'">H</template>
-        <template v-else>Hours</template>
+      <div class="ni-kv">
+        <div class="ni-kv-value">{{ twoDigits(hours) }}</div>
+        <div class="ni-kv-key">
+          <template v-if="units === 'short'">H</template>
+          <template v-else>Hours</template>
+        </div>
       </div>
-    </div>
-    <div class="component">
-      <div class="value">{{ twoDigits(minutes) }}</div>
-      <div class="unit">
-        <template v-if="units === 'short'">M</template>
-        <template v-else>Minutes</template>
+      <div class="ni-kv">
+        <div class="ni-kv-value">{{ twoDigits(minutes) }}</div>
+        <div class="ni-kv-key">
+          <template v-if="units === 'short'">M</template>
+          <template v-else>Minutes</template>
+        </div>
       </div>
-    </div>
-    <div class="component">
-      <div class="value">{{ twoDigits(seconds) }}</div>
-      <div class="unit">
-        <template v-if="units === 'short'">S</template>
-        <template v-else>Seconds</template>
+      <div class="ni-kv">
+        <div class="ni-kv-value">{{ twoDigits(seconds) }}</div>
+        <div class="ni-kv-key">
+          <template v-if="units === 'short'">S</template>
+          <template v-else>Seconds</template>
+        </div>
       </div>
     </div>
   </div>
